@@ -1,0 +1,49 @@
+<!-- ShowColor v1.0 -->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="data/img/icon1.png">
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="data/db.js"></script>
+		<script src="data/js/jquery.js"></script>
+	</head>
+	<body>
+		<!-- // // -->
+		<div id="programm">
+			<div class="mainHeader">
+				<div id="logo"></div>
+			</div>
+			<!-- // // -->
+			<div class="app">
+				<div id="btns">
+					<img src="data/img/hex_on.png" id="hex_off" onclick="HexPlay()">
+					<img src="data/img/text_off.png" id="text_off" onclick="TextPlay()">
+				</div>
+					<input id="hexInput" placeholder="ColorHex" oninput="viewHex()" autofocus>
+					<div id="viewColor"></div>
+			</div>
+		</div>
+		<details id="moreTools">
+		<summary>More Tools</summary>
+		<hr />
+			<canvas id="myCanvas" width="200" height="100" style="background-color:#fff;">
+				Your browser does not support the canvas element.
+			</canvas><br>
+			<input type="text" id="colorbase6"><br>
+			<input type="text" id="widthImage" oninput="imageSize()" width="10">
+			<input type="text" id="heightImage" oninput="imageSize()" width="10"><br>
+			<a href="data/error.html" onclick="downloadImage()" id="ssave" targrt="_blank"></a>
+		</details>
+		<center><div id="copyRight"></div></center>
+		<!-- // // -->
+		<!-- Scripts -->
+		<script src="data/js/01.js"></script>
+	</body>
+</html>
+
+<!--
+	https://github.com/Web5oder/ShowColor
+-->
